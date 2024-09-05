@@ -21,8 +21,8 @@ func TestS3(t *testing.T) {
 	a := "CLLXCjkzzLgNLE4PPqk1"
 	b := "iPmmjjqxzIb54DAyRSBIibURuA5ionSV09NM409a"
 
-	a = "LTAI5tEMGFYiQSk9kauLji4D"
-	b = "gNfWd3EqA6fS67tOzL9wwP8jG1SbfB"
+	a = ""
+	b = ""
 
 	region := "cn-beijing"
 	bucket := "proxy-cache"

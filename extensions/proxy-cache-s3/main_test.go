@@ -18,11 +18,12 @@ func TestCacheKey(t *testing.T) {
 }
 
 func TestS3(t *testing.T) {
-	accessKey := ""
-	secretKey := ""
-	//
-	////accessKey = ""
-	////secretKey = ""
+	a := "CLLXCjkzzLgNLE4PPqk1"
+	b := "iPmmjjqxzIb54DAyRSBIibURuA5ionSV09NM409a"
+
+	a = "LTAI5tEMGFYiQSk9kauLji4D"
+	b = "gNfWd3EqA6fS67tOzL9wwP8jG1SbfB"
+
 	region := "cn-beijing"
 	bucket := "proxy-cache"
 	expires := 24 * time.Hour
@@ -32,7 +33,7 @@ func TestS3(t *testing.T) {
 	key := "test.png"
 	versionID := "" // 如果不需要版本ID，可以留空
 
-	url, err := util.GeneratePresignedURL(accessKey, secretKey, sessionToken, region, host, bucket, key, expires, versionID)
+	url, err := util.GeneratePresignedURL(a, b, sessionToken, region, host, bucket, key, expires, versionID)
 	if err != nil {
 		fmt.Println("Error generating presigned URL:", err)
 		return

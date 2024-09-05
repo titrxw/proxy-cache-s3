@@ -18,11 +18,11 @@ func TestCacheKey(t *testing.T) {
 }
 
 func TestS3(t *testing.T) {
-	accessKey := "CLLXCjkzzLgNLE4PPqk1"
-	secretKey := "iPmmjjqxzIb54DAyRSBIibURuA5ionSV09NM409a"
-
-	//accessKey = "LTAI5tEMGFYiQSk9kauLji4D"
-	//secretKey = "gNfWd3EqA6fS67tOzL9wwP8jG1SbfB"
+	accessKey := ""
+	secretKey := ""
+	//
+	////accessKey = ""
+	////secretKey = ""
 	region := "cn-beijing"
 	bucket := "proxy-cache"
 	expires := 24 * time.Hour
